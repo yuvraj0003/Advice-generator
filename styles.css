@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1f2632;
+    color: #cee3e9;
+    height: 0.4rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* container */
+
+.container{
+    max-width: 30%;
+    padding: 2% 4% 2% 4%;
+    border-radius: 0.8rem;
+    background-color: #323a49;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+.container h1{
+    margin: 0;
+    padding: 2.5rem;
+    /* margin-top: 2rem; */
+    word-wrap: break-word;
+    background-image: url('images/pattern-divider-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.container p{
+    margin: 0;
+    color: #4ff094;
+}
+
+
+.container .random{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #4ff094;
+    border: none;
+    position: relative;
+    top: 4.2rem;
+    background-image: url("images/icon-dice.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .random:hover{
+    background-color: #52ffa8;
+    cursor: pointer;
+    box-shadow: 0rem 0rem 1rem #52ffa8;
+}
+
+/*footer */
+
+footer{
+    margin-top: 5%;
+    position: absolute;
+    bottom: 2%;
+}
+
+
+/*responsive */
+@media screen and (max-width: 860px){
+    .container{
+        max-width: 80%;
+        font-size: 71%;
+    }
+
+    .container p{
+        margin-top: 1rem;
+    }
+
+    .container .random{
+        top: 2.8rem;
+    }
+
+    footer{
+        margin-top: 15%;
+    }
+}
